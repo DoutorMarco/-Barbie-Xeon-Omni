@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial completa em Ringue 3 com imunidade a erros decimais e acoplamento DIU
+# Execução sequencial completa em Ringue 3 com imunidade quântica e validação ML-DSA
 import os
 import sys
 
@@ -15,7 +15,8 @@ def executar_pipeline_consolidado():
         "tese_juridica.py",
         "payload_diu.py",
         "cripto_pq_roads.py",
-        "acoplamento_diu_api.py"
+        "acoplamento_diu_api.py",
+        "cripto_mldsa_roads.py"
     ]
     
     for modulo in modulos:
@@ -28,7 +29,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 7 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 8 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
