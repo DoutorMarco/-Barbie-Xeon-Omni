@@ -1,0 +1,7 @@
+{
+    "engine_version": "SOH_v2.1_Homeost",
+    "merkle_root_state": "fc513db2b585fc526f9f53a16ef7a7481b164418275d0617a1b9d453a806f9e3",
+    "interoperability_protocol": "NATIVE_JSON_BARRIER",
+    "execution_ring": 3,
+    "nominal_latency_ms": 1316
+}
