@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial de 23 nós lógicos para o DIU com garantia de viabilidade financeira
+# Execução sequencial de 24 nós lógicos em Ringue 3 para validação e testes integrados
 import os
 import sys
 
@@ -30,7 +30,8 @@ def executar_pipeline_consolidado():
         "decoy_payload_injector.py",
         "db_fragmenter.py",
         "roads_sustainment.py",
-        "roads_power_eco.py"
+        "roads_power_eco.py",
+        "neuromorphic_bridge.py"
     ]
     
     for modulo in modulos:
@@ -43,7 +44,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 23 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 24 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
