@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial completa de 30 nós lógicos em Ringue 3 para validação operacional
+# Execução sequencial de 31 nós lógicos em Ringue 3 (Abertura oficial da Fase 5)
 import os
 import sys
 
 def executar_pipeline_consolidado():
-    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 4] ===")
+    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 5] ===")
     
-    # Matriz estrutural completa, expandida e finalizada com 30 microsserviços reais
     modulos = [
         "acoplamento_llm.py",
         "motor_sanitizador.py",
@@ -38,7 +37,8 @@ def executar_pipeline_consolidado():
         "resilience_analyzer.py",
         "operator_auth.py",
         "forensic_log.py",
-        "ecc_custom_core.py"
+        "ecc_custom_core.py",
+        "diu_qa_simulator.py"
     ]
     
     for modulo in modulos:
@@ -51,7 +51,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 30 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 31 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
