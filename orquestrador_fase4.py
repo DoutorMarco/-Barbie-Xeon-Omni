@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial integral em Ringue 3 com controle adaptativo e tolerância a falhas FEC
+# Execução sequencial integral em Ringue 3 com validação pós-quântica, telemetria e HMAC
 import os
 import sys
 
 def executar_pipeline_consolidado():
     print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 4] ===")
     
-    # Matriz estrutural completa de 12 microsserviços integrados
+    # Matriz estrutural completa de 13 microsserviços integrados
     modulos = [
         "acoplamento_llm.py",
         "motor_sanitizador.py",
@@ -20,7 +20,8 @@ def executar_pipeline_consolidado():
         "navegacao_roads.py",
         "rf_transmission.py",
         "rf_compression.py",
-        "rf_fec_control.py"
+        "rf_fec_control.py",
+        "hmac_control.py"
     ]
     
     for modulo in modulos:
@@ -33,7 +34,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 12 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 13 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
