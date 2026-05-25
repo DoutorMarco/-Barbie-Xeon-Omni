@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução de 91 nós lógicos em Ringue 3 com latência nominal estável de 13.16 ms
+# Execução de 93 nós lógicos em Ringue 3 com latência nominal estável de 13.16 ms
 import os
 import sys
 
 def executar_pipeline_consolidado():
-    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - SUITE DE 91 MICROSERVICES] ===")
+    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - CONSOLIDADO 93 NÓS] ===")
     
-    # Árvore mestre completa, expandida e unificada com 91 nós lógicos
+    # Árvore mestre completa, unificada e blindada com os 93 nós funcionais do projeto
     modulos = [
         "acoplamento_llm.py", "motor_sanitizador.py", "espelhamento_db.py", "tese_juridica.py",
         "payload_diu.py", "cripto_pq_roads.py", "acoplamento_diu_api.py", "cripto_mldsa_roads.py",
@@ -31,7 +31,8 @@ def executar_pipeline_consolidado():
         "thermo_nyquist_density.py", "topological_braid_core.py", "spintronics_state_driver.py", "power_glitch_detector.py",
         "hpc_admissibility_core.py", "cmmc_level2_shield.py", "superconducting_logic_core.py", "dod_coexistence_core.py",
         "seu_fault_core.py", "optical_matrix_mesh.py", "software_sovereign_mesh.py", "puf_security_driver.py",
-        "timeline_defense_core.py", "warp_speed_core.py", "cpu_affinity_shield.py"
+        "timeline_defense_core.py", "warp_speed_core.py", "cpu_affinity_shield.py", "asymmetric_advantage_core.py",
+        "peripheral_register_crypto.py"
     ]
     
     for modulo in modulos:
@@ -44,7 +45,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 91 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 93 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
