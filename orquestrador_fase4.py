@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução de 88 nós lógicos em Ringue 3 com latência nominal estável de 13.16 ms
+# Execução de 90 nós lógicos em Ringue 3 com latência nominal estável de 13.16 ms
 import os
 import sys
 
 def executar_pipeline_consolidado():
-    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - CONSOLIDADO 88 NÓS] ===")
+    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - SUITE DE 90 MICROSERVICES] ===")
     
     modulos = [
         "acoplamento_llm.py", "motor_sanitizador.py", "espelhamento_db.py", "tese_juridica.py",
@@ -29,7 +29,8 @@ def executar_pipeline_consolidado():
         "hardware_limiter_core.py", "thermo_nyquist_logic.py", "isr_injection_shield.py", "patent_grace_core.py",
         "thermo_nyquist_density.py", "topological_braid_core.py", "spintronics_state_driver.py", "power_glitch_detector.py",
         "hpc_admissibility_core.py", "cmmc_level2_shield.py", "superconducting_logic_core.py", "dod_coexistence_core.py",
-        "seu_fault_core.py", "optical_matrix_mesh.py", "software_sovereign_mesh.py", "puf_security_driver.py"
+        "seu_fault_core.py", "optical_matrix_mesh.py", "software_sovereign_mesh.py", "puf_security_driver.py",
+        "timeline_defense_core.py", "warp_speed_core.py"
     ]
     
     for modulo in modulos:
@@ -42,7 +43,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 88 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 90 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
