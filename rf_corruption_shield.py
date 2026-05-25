@@ -1,24 +1,22 @@
 # -*- coding: utf-8 -*-
 # PROJETO SOH V2.1 & XCORTEX ZERO - SHIELD CONTRA INJEÇÃO DE RF CORROMPIDA
-# Fase 6: Homologação de Resiliência de Comunicação de Rádio Transmissor (Sinal Tático)
+# Correção estrita de NameError para execução determinística em Ringue 3
 import hashlib
 
 def executar_protecao_rf_corrupcao():
     print("[LOG] Inicializando Motor de Detecção de Injeção de Pacotes Corrompidos via RF...")
     
-    # Amostragem de pacotes com erro detectados em uma janela de 1000 transmissões
     total_pacotes_janela = 1000
-    pacotes_corrompidos_detectados = 350  # Simulação de cenário com 35% de injeção adversarial
+    pacotes_corrompidos_detectados = 350
     
-    # Cálculo manual da taxa de erro por aritmética inteira rígida (Zero floats)
+    # Declaração única e precisa da variável de controle
     taxa_erro_percentual_escalada = (pacotes_corrompidos_detectados * 100) // total_pacotes_janela
     limite_tolerancia_erro_percentual = 25
     
     print(f"\n[RF MONITOR] Total de pacotes analisados na janela: {total_pacotes_janela}")
-    print(f"[RF MONITOR] Taxa de corrupção calculada: {taxa_erro_percentual_percentual_escalada}%")
+    print(f"[RF MONITOR] Taxa de corrupção calculada: {taxa_erro_percentual_escalada}%")
     
     canal_seguro = True
-    # Verificação estrita se o erro excede o teto de tolerância militar do edital ROADS
     if taxa_erro_percentual_escalada > limite_tolerancia_erro_percentual:
         canal_seguro = False
         print("[ALERTA CRÍTICO RF] Inundação contínua de pacotes corrompidos identificada!")
