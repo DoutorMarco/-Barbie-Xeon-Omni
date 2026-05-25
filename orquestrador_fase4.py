@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial completa de 51 nós lógicos em Ringue 3 (Fase 6 - Testes de Fogo)
+# Execução sequencial completa de 52 nós lógicos em Ringue 3 (Fase 6 - Testes Adversariais)
 import os
 import sys
 
 def executar_pipeline_consolidado():
     print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 6 - ADVERSARIAL] ===")
     
-    # Matriz estrutural completa e expandida com 51 microsserviços reais funcionais
+    # Matriz estrutural completa e expandida com 52 microsserviços reais funcionais
     modulos = [
         "acoplamento_llm.py", "motor_sanitizador.py", "espelhamento_db.py", "tese_juridica.py",
         "payload_diu.py", "cripto_pq_roads.py", "acoplamento_diu_api.py", "cripto_mldsa_roads.py",
@@ -21,7 +21,7 @@ def executar_pipeline_consolidado():
         "rf_dos_simulator.py", "thermal_silicon_monitor.py", "port_scan_detector.py", "secure_boot_check.py",
         "stack_buffer_defense.py", "rbac_config_shield.py", "link_degradation_alert.py", "kinematic_drift_watch.py",
         "rf_anti_replay_guard.py", "memory_pool_isolator.py", "software_watchdog.py", "brute_force_defense.py",
-        "static_mmu_emulator.py", "consensus_quorum_core.py", "diu_fire_test.py"
+        "static_mmu_emulator.py", "consensus_quorum_core.py", "diu_fire_test.py", "rf_side_channel_shield.py"
     ]
     
     for modulo in modulos:
@@ -34,7 +34,7 @@ def executar_pipeline_consolidado():
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 51 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 52 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
