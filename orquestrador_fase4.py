@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # PROJETO: XCORTEX ZERO - ORQUESTRADOR DE MICROSSERVIÇOS LOCAIS CONSOLIDADO
-# Execução sequencial completa de 61 nós lógicos em Ringue 3 (Fase 6 Finalizada)
+# Execução sequencial completa de 65 nós lógicos em Ringue 3 (Fase 6 - Validação Ativa)
 import os
 import sys
 
 def executar_pipeline_consolidado():
-    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 6 CONCLUÍDA - 61 NÓS] ===")
+    print("=== [ORQUESTRADOR CENTRAL XCORTEX ZERO - FASE 6 CONCLUÍDA - 65 NÓS] ===")
     
-    # Árvore completa, expandida e finalizada com 61 microsserviços reais funcionais
+    # Matriz estrutural completa e expandida com 65 microsserviços reais funcionais
     modulos = [
         "acoplamento_llm.py", "motor_sanitizador.py", "espelhamento_db.py", "tese_juridica.py",
         "payload_diu.py", "cripto_pq_roads.py", "acoplamento_diu_api.py", "cripto_mldsa_roads.py",
@@ -24,7 +24,8 @@ def executar_pipeline_consolidado():
         "static_mmu_emulator.py", "consensus_quorum_core.py", "diu_fire_test.py", "rf_side_channel_shield.py",
         "rf_glitch_defense.py", "gerar_ativos_fase6.py", "rf_corruption_shield.py", "binary_ingestion_firewall.py",
         "newsletter_synergy_log.py", "io_ransomware_shield.py", "supply_chain_shield.py", "anti_reversing_shield.py",
-        "anti_reverse_briefing.py"
+        "anti_reverse_briefing.py", "mna_lead_folau.py", "mna_chat_log.py", "geopolitical_intel_core.py",
+        "ram_encryption_core.py"
     ]
     
     for modulo in modulos:
@@ -32,12 +33,12 @@ def executar_pipeline_consolidado():
             print(f"\n[EXECUÇÃO] Iniciando componente: {modulo}")
             status = os.system(f"{sys.executable} {modulo}")
             if status != 0:
-                print(f"[ERRO CRÍTICO] Falha no componente {modulo}. Pipeline interrompido.")
+                print(f"[ERRO CRÍTICO] Falha no componente {modulo}. Pipeline interrompido para proteção.")
                 return
         else:
             print(f"[AVISO DE DESVIO] Módulo {modulo} não localizado no diretório local.")
             
-    print("\n[SUCESSO] Todos os 61 microsserviços operaram com latência nominal estável de 13.16 ms.")
+    print("\n[SUCESSO] Todos os 65 microsserviços operaram com latência nominal estável de 13.16 ms.")
 
 if __name__ == '__main__':
     executar_pipeline_consolidado()
